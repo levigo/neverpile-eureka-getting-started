@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-boot-admin
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+  
+server:
+  port: 1001

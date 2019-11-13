@@ -1,0 +1,29 @@
+target/
+
+######################
+# Documents, Facets & Logs
+######################
+neverpile-eureka_default
+transaction-logs
+data
+
+######################
+# IntelliJ
+######################
+.idea/**
+*.iml
+
+######################
+# Eclipse
+######################
+/.metadata
+/.recommenders
+/.settings
+
+######################
+# JWT
+######################
+/jwt/src/main/resources/imageviewer
+/jwt/src/main/resources/WEB-INF/deploy
+/jwt/src/main/gwt-unitCache
+.springboot-gwt-devmode

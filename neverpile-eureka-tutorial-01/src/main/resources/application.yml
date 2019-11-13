@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: neverpile eureka (tutorial 01)
+
+management:
+  health:
+    cassandra.enabled: false
+    db.enabled: false
+    elasticsearch.enabled: false
+
+neverpile-eureka:
+  data-path: data
+
+  bridge:
+    storage:
+      filesystem:
+        rootPath: ${neverpile-eureka.data-path}/objects
+
+  wal:
+    directory: ${neverpile-eureka.data-path}/wal
+
+  oauth2:
+    embedded-authorization-server:
+      enabled: true
+      key: "Signing§Key"
