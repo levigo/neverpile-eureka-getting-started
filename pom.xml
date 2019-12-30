@@ -11,17 +11,15 @@
   <packaging>pom</packaging>
 
   <properties>
-    <java.version>1.8</java.version>
+    <java.version>11</java.version>
 
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <spring-boot.version>2.1.7.RELEASE</spring-boot.version>
-    <springfox.version>2.9.2</springfox.version>
+    <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
 
-    <neverpile-eureka.version>0.1.14</neverpile-eureka.version>
-    <eureka-webjar.version>0.1-SNAPSHOT</eureka-webjar.version>
+    <neverpile-eureka.version>0.2.47</neverpile-eureka.version>
   </properties>
 
   <repositories>
@@ -43,13 +41,35 @@
     </dependencies>
   </dependencyManagement>
 
-  <modules>
-    <module>neverpile-eureka-tutorial-01</module>
-    <module>neverpile-eureka-tutorial-02</module>
-    <module>neverpile-eureka-tutorial-03</module>
-    <module>neverpile-eureka-tutorial-04</module>
-    <module>neverpile-eureka-my-plugin</module>
-    <module>spring-boot-admin-server</module>
-    <module>jwt</module>
-  </modules>
+  <profiles>
+    <profile>
+      <id>no-jwt-build</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>
+        <module>neverpile-eureka-tutorial-01</module>
+        <module>neverpile-eureka-tutorial-02</module>
+        <module>neverpile-eureka-tutorial-03</module>
+        <module>neverpile-eureka-tutorial-04</module>
+        <module>neverpile-eureka-my-plugin</module>
+        <module>spring-boot-admin-server</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>full-build</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <modules>
+        <module>neverpile-eureka-tutorial-01</module>
+        <module>neverpile-eureka-tutorial-02</module>
+        <module>neverpile-eureka-tutorial-03</module>
+        <module>neverpile-eureka-tutorial-04</module>
+        <module>neverpile-eureka-my-plugin</module>
+        <module>spring-boot-admin-server</module>
+        <module>jwt</module>
+      </modules>
+    </profile>
+  </profiles>
 </project>
