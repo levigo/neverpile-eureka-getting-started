@@ -4,16 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>neverpile-eureka-getting-started</artifactId>
-    <groupId>com.neverpile</groupId>
+    <groupId>com.neverpile.eureka.tutorials</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>neverpile-eureka-my-plugin</artifactId>
-  <groupId>com.neverpile</groupId>
 
   <dependencies>
     <dependency>
-      <groupId>com.neverpile</groupId>
+      <groupId>com.neverpile.eureka</groupId>
       <artifactId>neverpile-eureka-core</artifactId>
       <version>${neverpile-eureka.version}</version>
     </dependency>

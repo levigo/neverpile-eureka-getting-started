@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>neverpile-eureka-getting-started</artifactId>
-    <groupId>com.neverpile</groupId>
+    <groupId>com.neverpile.eureka.tutorials</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -16,13 +16,13 @@
   <dependencies>
     <!-- my tutorial plugin -->
     <dependency>
-      <groupId>com.neverpile</groupId>
+      <groupId>com.neverpile.eureka.tutorials</groupId>
       <artifactId>neverpile-eureka-my-plugin</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
     <!-- neverpile -->
     <dependency>
-      <groupId>com.neverpile</groupId>
+      <groupId>com.neverpile.eureka</groupId>
       <artifactId>neverpile-eureka-spring-boot-starter</artifactId>
       <version>${neverpile-eureka.version}</version>
     </dependency>
