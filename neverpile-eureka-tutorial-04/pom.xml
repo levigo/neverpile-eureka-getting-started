@@ -25,6 +25,7 @@
       <groupId>com.neverpile.eureka</groupId>
       <artifactId>neverpile-eureka-spring-boot-starter</artifactId>
       <version>${neverpile-eureka.version}</version>
+      <type>pom</type>
     </dependency>
     <!-- Spring (-Boot) -->
     <dependency>
