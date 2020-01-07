@@ -24,8 +24,9 @@
 
   <repositories>
     <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/levigo/neverpile-eureka</url>
+      <id>neverpile</id>
+      <name>Neverpile Apache Maven Packages</name>
+      <url>https://registry.neverpile.com/repository/maven-releases/</url>
     </repository>
   </repositories>
 
