@@ -15,11 +15,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
   public void configure(final HttpSecurity http) throws Exception {
     // @formatter:off
     http
-        .csrf().disable()
-        .httpBasic().and()
-        .authorizeRequests()
-          .antMatchers("/api/**")
-            .authenticated()
+        .csrf().disable() // Disable CSRF
+        .httpBasic() // Enable basicAuth
+        .and().authorizeRequests() // Allows restricting access based upon the HttpServletRequest using a...
+          .antMatchers("/api/**") // List of path patterns with any http method
+            .authenticated() // Specify that URLs are allowed by any authenticated user.
     ;
     // @formatter:on
   }
