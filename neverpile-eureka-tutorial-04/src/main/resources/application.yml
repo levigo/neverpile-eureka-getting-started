@@ -17,6 +17,12 @@ management:
   endpoint:
     health.show-details: always
 
+neverpile:
+  url-crypto:
+    shared-secret:
+      enabled: true
+      secret-key: ps634xpe85en4a779g98
+
 neverpile-eureka:
   data-path: data
 
@@ -27,13 +33,3 @@ neverpile-eureka:
 
   wal:
     directory: ${neverpile-eureka.data-path}/wal
-
-  oauth2:
-    embedded-authorization-server:
-      enabled: true
-      key: "Signing§Key"
-
-  pre-signed-urls:
-    enabled: true
-    secret-key: "Not#So%Secret"
-    patterns: "/**"

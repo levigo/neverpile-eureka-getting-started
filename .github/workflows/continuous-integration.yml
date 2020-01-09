@@ -28,7 +28,7 @@ jobs:
     - name: Perform build
       run: mvn test
 
-      ## Notify Slack
+    ## Notify Slack
     - name: Notify slack
       uses: hennejg/slack-build-notifier@v1.1
       with:
