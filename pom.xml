@@ -19,7 +19,7 @@
 
     <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
 
-    <neverpile-eureka.version>0.2.52</neverpile-eureka.version>
+    <neverpile-eureka.version>0.2.59</neverpile-eureka.version>
   </properties>
 
   <repositories>
@@ -36,6 +36,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.neverpile.eureka</groupId>
+        <artifactId>neverpile-eureka-bom</artifactId>
+        <version>${neverpile-eureka.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
