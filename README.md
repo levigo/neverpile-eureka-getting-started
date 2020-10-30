@@ -5,7 +5,7 @@
 
 ### neverpile eureka
 neverpile eureka is an open-source project developed by [levigo solutions gmbh](https://www.levigo.de/) and can be found on [here](https://github.com/levigo/neverpile-eureka) on GitHub.
-more Information can be found [here](https://neverpile.com/).
+More Information can be found [here](https://neverpile.com/).
 
 ### Tutorials
 This Project contains a tutorial series to get started on development with [neverpile Eureka](https://neverpile.com/).  
