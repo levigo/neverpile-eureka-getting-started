@@ -18,7 +18,10 @@ data
 ######################
 /.metadata
 /.recommenders
-/.settings
+.settings
+target/
+.classpath
+.project
 
 ######################
 # JWT
