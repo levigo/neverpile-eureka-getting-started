@@ -1,6 +1,8 @@
 spring:
   application:
     name: neverpile eureka (tutorial 01)
+  main:
+    allow-circular-references: true
 
 management:
   health:
