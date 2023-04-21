@@ -2,9 +2,11 @@ spring:
   application:
     name: neverpile eureka (tutorial 02)
   boot.admin.client:
-      url: [http://localhost:1001]
+      url: [http://localhost:5001]
       username: admin
       password: admin
+  main:
+    allow-circular-references: true
 
 management:
   health:
